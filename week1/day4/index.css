@@ -1,0 +1,80 @@
+/* both .banner and .banner img is coming form https://stackoverflow.com/a/493329 */
+.banner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: url(https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_614.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.banner img {
+    min-width: 100%;
+    margin-top: -100px;
+}
+.recreations a:link {
+    font-weight: bold;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: linen;
+}
+.recreations a:visited {
+    text-decoration: none;
+    color: linen;
+}
+.recreations {
+    margin-top: 1em;
+    float: right;
+    margin-right: 20px;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+.banner h1 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-left: 20px;
+    color: linen;
+    font-size: 72px;
+    margin-bottom: -0.4em;
+}
+.banner h3 {
+    color: linen;
+}
+.city {
+    margin-top: 10em;
+}
+.content {
+    margin-left: 10em;
+    margin-right: 10em;
+    align-self: center;
+}
+hr {
+    width: 80%;
+    align-self: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.transportation img {
+    width: 50%;
+}
+.transportation {
+    overflow: auto;
+}
+.transportation img {
+    float: left;
+    margin-right: 2em;
+}
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1em;
+}
+/* strong {
+    color: #660000;
+} */
+
+.transportation h3 {
+    /* color: #274e13; */
+}
