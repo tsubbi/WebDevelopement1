@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    margin-top: 0%;
+    margin-bottom: 30px;
+    position: fixed;
+    background-image: url(https://www.nintendo.com/content/dam/noa/en_US/games/switch/m/mario-kart-8-deluxe-switch/mario-kart-8-deluxe-switch-hero.jpg);
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #80ced6;
+    background-color: #d5f4e6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 30px 75px;
+    border-radius: 10px;
+}
+
+.navbar a:hover, a:active {
+    background-color: #034f84;
+    color: #92a8d1;
+}
+
+.content {
+    width: 80%;
+    margin: 150px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.team-members {
+    width: 90%;
+    height: 50%;
+    margin: auto;
+    border-radius: 15px;
+    border: 3px solid darkgreen;
+    padding: 30px 10px;
+}
+
+.team-members > ul > li {
+    display: inline-block;
+}
+
+.member {
+    background-color: #618685;
+    width: 75%;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid none;
+    overflow: scroll;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.member > p {
+    text-align: justify;
+}
+
+.member:hover {
+    width: 90%;
+    background-color: #80ced6;
+    transition: ease-in-out 350ms;
+}
+
+li > .member > img {
+    width: 90%;
+} 

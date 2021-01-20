@@ -1,0 +1,29 @@
+body {
+    background: #bdffbd;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto 30px;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr {
+    width: 80%;
+    margin: 2em auto;
+}
+
+p::first-line {
+    background-color: palegoldenrod;
+}
+
+p::first-letter {
+    font-size: x-large;
+}

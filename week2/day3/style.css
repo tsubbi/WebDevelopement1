@@ -1,0 +1,95 @@
+/* 
+css-shapes:
+    https://css-tricks.com/the-shapes-of-css/ 
+*/
+@import "./anime.css";
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+    color: silver;
+}
+
+.stage {
+    border: 3px solid teal;
+    width: 75%;
+    height: fit-content;
+    border-radius: 20px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* this is how to make aspect-ratio of 1:1
+.square & .square:before
+futher reading from this: https://mademyday.de/height-equals-width-with-pure-css/ */
+.square {
+    position: relative;
+    margin: 30px;
+    background-color: tomato;
+    opacity: 0.8;
+    box-shadow: 
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* animation back to normal state */
+    transition: ease-in-out 500ms;
+    /* this is for setting up aspect-ratio */
+    width: 25%;
+}
+
+.square:before {
+    content: "";
+    display: block;
+    padding-top: 100%;  
+}
+
+.hovered {
+    display: none;
+}
+
+/* standerizing the component back to normal */
+/* I do this to reduce unecessary code and keep css clean */
+.square:hover {
+    transition: ease-in-out 500ms;
+    opacity: 1;
+    z-index: 10;
+}
+
+/* I found this solution under https://stackoverflow.com/a/9916142/ */
+/* remove the word: hover me */
+.square:hover .hover-me {
+    display: none;
+}
+
+/* displaying "hovered" */
+.square:hover .hovered {
+    display: inline;
+}
+
+/* centering tips:
+https://css-tricks.com/centering-css-complete-guide/ */
+.square > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: wheat;
+}
+
+.dot {
+    background-color: wheat;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    left: 5px;
+    border-radius: 5px;
+}

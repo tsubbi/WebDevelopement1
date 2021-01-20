@@ -1,0 +1,73 @@
+/* I tried the style and applied to my page is coming from https://www.youtube.com/watch?v=FEmysQARWFU&ab_channel=KevinPowell */
+/* Navbar with some animation */
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-container img {
+    float: left;
+}
+
+header {
+    background: #55d6aa;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 25px;
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+}
+
+nav ul > li > a {
+    color: #444444;
+    text-decoration: none;
+    /* this will turn every character into uppercase */
+    text-transform: uppercase;
+}
+
+nav ul > li > a:hover {
+    color: #000000;
+}
+
+nav ul > li > a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #444444;
+    /* need to add this abosolute in relation with parent's relative position */
+    position: absolute;
+    top: 0%;
+    /* this controls how fast the animation will appear 250ms = 0.25s*/
+    /* ease-in-out will make animation smoother */
+    transition: all ease-in-out 250ms;
+}
+
+nav ul > li > a:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+.shorthand {
+    width: 40vw;
+    height: fit-content;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+.shorhand ul li  {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}

@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 80%;
+    margin: auto;
+}
+
+td {
+    padding: 10px 10px;
+}
+
+th {
+    padding: 10px;
+}
