@@ -1,3 +1,7 @@
+/* inspired from 
+- Responsive Navigation Bar: https://www.youtube.com/watch?v=kEt5DCHeyJo 
+- Glassmorphism Product Card UI Design using HTML and CSS: https://www.youtube.com/watch?v=kEt5DCHeyJo */
+
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 :root {
@@ -6,6 +10,9 @@
     --header-shadow: #00000051;
     --unselected-text-color: #262626;
     --selected-text-color: #f5f5f5;
+    --product-item-background: #ffffff0d;
+    --product-item-shadow: #0000004d;
+    --product-item-text-color: #3a565e;
 }
 
 body {
@@ -73,6 +80,80 @@ nav ul li a:hover {
     color: var(--selected-text-color);
     transition: 500ms;
 }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .product-item {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--product-item-background);
+    box-shadow: 0 10px 25px var(--product-item-shadow);
+    backdrop-filter: blur(15px);
+}
+
+.container .product-item .img-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: 500ms ease-in-out;
+}
+
+.container .product-item:hover .img-box {
+    transform: translateY(-100px);
+}
+
+.container .product-item .img-box img {
+    width: 100%;
+    margin: 0 0 20px;
+    transition: 500ms ease-in-out;
+}
+
+.container .product-item .img-box h2 {
+    color: var(--background-color);
+    font-weight: 600;
+}
+
+.container .product-item .content {
+    bottom: 10px;
+    position: absolute;
+    padding: 20px;
+    font-size: 15px;
+    transition: 500ms ease-in-out;
+    color: var(--product-item-text-color);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .product-item:hover .content {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 250ms;
+}
+
 @media (max-width: 1200px) {
     header {
         margin: 20px;
