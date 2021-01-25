@@ -1,0 +1,81 @@
+.blog-post-card {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    background: #5f4b8b17;
+    margin: 20px auto;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.blog-post-card img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    transition: 500ms;
+}
+
+.blog-post-card:hover {
+    width: 800px;
+}
+
+.blog-post-card:hover:nth-child(even) img {
+    left: 90%;
+    height: 250px;
+}
+
+.blog-post-card:hover:nth-child(odd) img {
+    left: 10%;
+    height: 250px;
+}
+
+.blog-post-card .card-content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+}
+
+.blog-post-card:hover:nth-child(odd) .card-content {
+    opacity: 1;
+    visibility: visible;
+    left: 20%;
+}
+
+.blog-post-card:hover:nth-child(even) .card-content {
+    opacity: 1;
+    visibility: visible;
+    left: -20%;
+}
+
+
+.blog-post-card .card-content h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.blog-post-card .card-content p {
+    line-height: 1.1em;
+}
+
+.blog-post-card .card-content a {
+    position: relative;
+    display: inline-block;
+    color: seashell;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #e69a8d;
+    margin-top: 10px;
+    text-decoration: none;
+}

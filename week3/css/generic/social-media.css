@@ -1,0 +1,32 @@
+.social-media {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.social-media li {
+    list-style: none;
+    margin: 5px;
+    padding: 0 6px;
+    transition: 500ms;
+    transition-delay: calc(200ms * var(--i));
+}
+
+.social-media li a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.social-media li:nth-child(1) {
+    --i: 1;
+}
+
+.social-media li:nth-child(2) {
+    --i: 2;
+}
+
+.social-media li:nth-child(3) {
+    --i: 3;
+}

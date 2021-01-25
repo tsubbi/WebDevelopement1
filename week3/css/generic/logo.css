@@ -1,0 +1,10 @@
+.logo {
+    content: '';
+    margin: 10px;
+    left: 20px;
+    float: left;
+    height: 75px;
+    width: 75px;
+    background: #ffa177;
+    clip-path: polygon(25% 0, 45% 0, 20% 50%, 45% 100%, 65% 80%, 65% 45%, 45% 45%, 45% 25%, 100% 25%, 100% 45%, 85% 45%, 85% 80%, 65% 100%, 25% 100%, 0 50%);
+} 

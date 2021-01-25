@@ -1,0 +1,19 @@
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .logo-container {
+    position: relative;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}

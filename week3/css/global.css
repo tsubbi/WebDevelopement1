@@ -1,0 +1,57 @@
+@import "./generic/footer.css";
+@import "./generic/glass-hover.css";
+@import "./generic/logo.css";
+@import "./generic/social-media.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+nav .logo-container a .logo {
+    margin: 10px 0 10px 15em;
+}
+
+body section {
+    width: 100%;
+    padding-top: 8vh;
+    padding-bottom: 30px;
+}
+
+body section:nth-child(even) {
+    background: rgba(255, 245, 238, 0.5);
+}
+
+body section:nth-child(odd) {
+    background: rgba(211, 211, 211, 0.2);
+}
+
+body section p {
+    color: #5f4b8b;
+}
+
+body section h3 {
+    color: #e69a8d;
+}
+
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    box-sizing: border-box;
+}
+
+.display-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

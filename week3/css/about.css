@@ -1,0 +1,52 @@
+@import "./about/card.css";
+
+@import "./portfolio/blog-post.css";
+
+@import "./form.css";
+@import "./navbar.css";
+@import "./global.css";
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.at-load {
+    position: absolute;
+    background: url(https://wallpaperaccess.com/full/2394157.jpg) no-repeat center;
+    width: 100vw;
+    height: 100vh;
+    top: -5em;
+    image-orientation: from-image;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 10%, 100% 10%, 100% 60%, 0 60%);
+    image-orientation: -10em;
+    animation: loading 2s;
+    opacity: 0;
+    z-index: -10;
+}
+
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-me .am-content {
+    width: 60%;
+}
+
+@keyframes loading {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        opacity: 1;
+        z-index: 100;
+    }
+    99% {
+        clip-path: polygon(0 10%, 100% 10%, 100% 60%, 0 60%);
+        opacity: 1;
+        z-index: 100;
+    }
+    100% {
+        opacity: 0;
+        z-index: -10;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+/* this is another effect that is from https://codepen.io/tsubbi/pen/yLarRPB */
+.paper-cut-word span {
+    position: relative;
+    color: #d189a0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4em;
+    line-height: 1em;
+}
+
+.paper-cut-word span:before,
+.paper-cut-word span:after {
+    content: attr(data-letter);
+    position: absolute;
+    left: 0;
+    color: transparent;
+}
+.paper-cut-word span:before {
+    transform-style:preserve-3d;
+    transform: skew(0deg, 3deg);
+    transform-origin:0 100% ;
+    /* Both shadows are required for browsers that don't support full spread specs and those that do support full spread specs*/
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0);
+    text-shadow:0px 3px 5px 1px rgba(0,0,0,0);
+}
+.paper-cut-word:hover span:before {
+    transform-style:preserve-3d;
+    transform: skew(0deg, 3deg);
+    transform-origin:0 100% ;
+    /* Both shadows are required for browsers that don't support full spread specs and those that do support full spread specs*/
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+    text-shadow:0px 3px 5px 1px rgba(0,0,0,0.25);
+}
+.paper-cut-word span:after {
+    color: seashell;
+    background: -webkit-linear-gradient(45Deg, seashell, rgb(255, 240, 229));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform-style:preserve-3d;
+    transform: rotateY(0deg)translate3d(-4px,-2px,-20px) skew(0deg, 0deg);;
+    transform-origin:0 100% ;
+    z-index: 100;
+    transition: all .2s ease-out;
+}
+.paper-cut-word:hover span:after {
+    color: seashell;
+    background: -webkit-linear-gradient(left, seashell, rgb(255, 240, 229));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-linear-gradient: (45deg, white, black);
+    transform-style:preserve-3d;
+    transform: rotateY(11deg)translate3d(-4px,-2px,-20px) skew(-2deg, -6deg);;
+    transform-origin:0 100% ;
+    z-index: 100;
+    transition: all .7s ease-out; 
+}

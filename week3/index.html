@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum, THE DEVELOPER</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <section class="display-column">
+        <header>
+            <div class="logo glassmorphism"></div>
+            <div class="toggle" onclick="menuToggle();"><i onclick="iconChange(this)" class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </header>
+    
+        <div class="glass"></div>   
+        <div class="content">
+            <h2>Lorem Ipsum<br><span>the Developer</span></h2>
+        </div> 
+
+        <ul class="social-media">
+            <li><a href="#" class="glassmorphism"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="glassmorphism"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+
+        <ul class="navigation">
+            <li>
+                <a href="./about.html" class="paper-cut-word">
+                    <span data-letter="A">A</span>
+                    <span data-letter="B">B</span>
+                    <span data-letter="O">O</span>
+                    <span data-letter="U">U</span>
+                    <span data-letter="T">T</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="paper-cut-word">
+                    <span data-letter="P">P</span>
+                    <span data-letter="O">O</span>
+                    <span data-letter="R">R</span>
+                    <span data-letter="T">T</span>
+                    <span data-letter="F">F</span>
+                    <span data-letter="O">O</span>
+                    <span data-letter="L">L</span>
+                    <span data-letter="I">I</span>
+                    <span data-letter="O">O</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="paper-cut-word">
+                    <span data-letter="C">C</span>
+                    <span data-letter="O">O</span>
+                    <span data-letter="N">N</span>
+                    <span data-letter="T">T</span>
+                    <span data-letter="A">A</span>
+                    <span data-letter="C">C</span>
+                    <span data-letter="T">T</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.toggle');
+            const section = document.querySelector('section');
+
+            toggleMenu.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+        function iconChange(icon) {
+            icon.classList.toggle("fa-times");
+        }
+    </script>
+</body>
+</html>

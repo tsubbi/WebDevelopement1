@@ -1,0 +1,130 @@
+@import "./index/paper-cut-out.css";
+@import "./index/index-toggle.css";
+@import "./index/index-header.css";
+
+@import "./generic/logo.css";
+@import "./generic/social-media.css";
+@import "./generic/glass-hover.css";
+
+
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://wallpaperaccess.com/full/2394157.jpg) center fixed;
+    background-size: cover;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    bottom: 40px;
+    right: 100px;
+}
+
+.glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.1);
+    transition: 500ms;
+    transition-delay: 1s;
+}
+
+section.active .glass {
+    width: 100%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition-delay: 0s;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+section .content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    transition: 500ms;
+    transition-delay: 1s;
+}
+
+section.active .content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-200px);
+    transition-delay: 0s;
+}
+
+section > .content > h2 {
+    position: relative;
+    color: white;
+    font-size: 10vw;
+    line-height: 0.55em;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+section > .content > h2 > span {
+    font-size: 0.2em;
+    font-weight: 300;
+    letter-spacing: 5px;
+    background: white;
+    color: #111111;
+    padding: 0 10px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+section.active .social-media li {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+}
+
+section .navigation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+section .navigation li {
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 500ms;
+    transform: translateX(200px);
+    transition-delay: calc(200ms *var(--i));
+}
+
+section.active .navigation li {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+section .navigation li a {
+    text-decoration: none;
+    display: inline-block;
+}

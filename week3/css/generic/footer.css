@@ -1,0 +1,29 @@
+footer {
+    background: #672f3c;
+    height: auto;
+    width: 100vw;
+    padding-top: 30px;
+    color: seashell;
+}
+
+footer .footer-content {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+footer .footer-content p {
+    letter-spacing: 2px;
+    font-size: small;
+}
+
+footer .footer-content p span {
+    font-size: x-large;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+footer .footer-content.display-column .social-media {
+    bottom: 0;
+}
