@@ -1,18 +1,30 @@
 /* inspired from 
 - Responsive Navigation Bar: https://www.youtube.com/watch?v=kEt5DCHeyJo 
-- Glassmorphism Product Card UI Design using HTML and CSS: https://www.youtube.com/watch?v=kEt5DCHeyJo */
+- Glassmorphism Product Card UI Design: https://www.youtube.com/watch?v=kEt5DCHeyJo 
+- Responsive Fotter Section: https://www.youtube.com/watch?v=B4KZYsyuVOE
+*/
 
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 :root {
+    /* header color */
     --logo-color: #367aca;
     --background-color: #fff5ee;
     --header-shadow: #00000051;
     --unselected-text-color: #262626;
     --selected-text-color: #f5f5f5;
+    /* body color */
     --product-item-background: #ffffff0d;
     --product-item-shadow: #0000004d;
-    --product-item-text-color: #3a565e;
+    --h2-color: #c35371;
+    --text-color: #002465;
+    /* footer color */
+    --footer-text-color: #7a8195;
+    --footer-background: #abd7ef;
+    --facebook-color: #3b5998;
+    --twitter-color: #1da1f2;
+    --youtube-color: #e62117;
+    --telegram-color: #0088cc;
 }
 
 body {
@@ -123,7 +135,7 @@ section {
 }
 
 .container .product-item:hover .img-box {
-    transform: translateY(-100px);
+    transform: translateY(-150px);
 }
 
 .container .product-item .img-box img {
@@ -133,7 +145,7 @@ section {
 }
 
 .container .product-item .img-box h2 {
-    color: var(--background-color);
+    color: var(--h2-color);
     font-weight: 600;
 }
 
@@ -143,7 +155,7 @@ section {
     padding: 20px;
     font-size: 15px;
     transition: 500ms ease-in-out;
-    color: var(--product-item-text-color);
+    color: var(--text-color);
     opacity: 0;
     visibility: hidden;
 }
@@ -153,6 +165,117 @@ section {
     visibility: visible;
     transition-delay: 250ms;
 }
+
+footer {
+    position: relative;
+    background: var(--footer-background);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .footer-container .section {
+    margin-right: 30px;
+}
+
+footer .footer-container .section.summary {
+    width: 40%;
+}
+
+footer .footer-container h2 {
+    position: relative;
+    color: var(--logo-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+footer .footer-container h2::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 3px;
+    bottom: -5px;
+    background: var(--h2-color);
+}
+
+footer p {
+    color: var(--footer-text-color);
+}
+
+.footer-social-media {
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer-social-media li {
+    list-style: none;
+}
+
+.footer-social-media li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--footer-text-color);
+    font-size: 30px;
+    background: var(--background-color);
+}
+
+.footer-social-media li:nth-child(1) a:hover {
+    color: var(--facebook-color);
+}
+
+.footer-social-media li:nth-child(2) a:hover {
+    color: var(--twitter-color);
+}
+
+.footer-social-media li:nth-child(3) a:hover {
+    color: var(--youtube-color);
+}
+
+.footer-social-media li:nth-child(4) a:hover {
+    color: var(--telegram-color);
+}
+
+footer .footer-container .quick-link {
+    position: relative;
+    width: 30%;
+}
+
+.quick-link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-link ul li a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.copyright {
+    background: var(--text-color);
+    color: var(--selected-text-color);
+    text-align: center;
+    padding: 8px 100px;
+    font-size: 15px;
+}
+
 
 @media (max-width: 1200px) {
     header {
@@ -200,5 +323,27 @@ section {
 
     nav.active ul li a {
         margin: 0;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+    footer .footer-container .section {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .footer-container .section.summary, 
+    footer .footer-container .section.quick-link {
+        width: 100%;
+    }
+
+    .copyright {
+        padding: 8px 40px;
     }
 }
