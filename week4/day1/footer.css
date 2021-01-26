@@ -1,0 +1,109 @@
+footer {
+    position: relative;
+    background: var(--footer-background);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .footer-container .section {
+    margin-right: 30px;
+}
+
+footer .footer-container .section.summary {
+    width: 40%;
+}
+
+footer .footer-container h2 {
+    position: relative;
+    color: var(--logo-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+footer .footer-container h2::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 3px;
+    bottom: -5px;
+    background: var(--h2-color);
+}
+
+footer p {
+    color: var(--footer-text-color);
+}
+
+.footer-social-media {
+    margin-top: 20px;
+    display: flex;
+}
+
+.footer-social-media li {
+    list-style: none;
+}
+
+.footer-social-media li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--footer-text-color);
+    font-size: 30px;
+    background: var(--background-color);
+}
+
+.footer-social-media li:nth-child(1) a:hover {
+    color: var(--facebook-color);
+}
+
+.footer-social-media li:nth-child(2) a:hover {
+    color: var(--twitter-color);
+}
+
+.footer-social-media li:nth-child(3) a:hover {
+    color: var(--youtube-color);
+}
+
+.footer-social-media li:nth-child(4) a:hover {
+    color: var(--telegram-color);
+}
+
+footer .footer-container .quick-link {
+    position: relative;
+    width: 30%;
+}
+
+.quick-link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-link ul li a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.copyright {
+    background: var(--text-color);
+    color: var(--selected-text-color);
+    text-align: center;
+    padding: 8px 100px;
+    font-size: 15px;
+}
