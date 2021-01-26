@@ -5,10 +5,10 @@
 */
 
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import "./header.css";
-@import "./content.css";
-@import "./color.css";
-@import "./footer.css";
+@import "./css/header.css";
+@import "./css/content.css";
+@import "./css/color.css";
+@import "./css/footer.css";
 
 body {
     margin: 0;
