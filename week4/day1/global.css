@@ -6,6 +6,7 @@
 
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import "./header.css";
+@import "./content.css";
 
 
 :root {
@@ -35,79 +36,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: url(https://img.wallpapersafari.com/desktop/1920/1080/38/39/BiOeu5.jpg) center fixed;
     background-size: cover;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
-    padding: 100px 20px;
-    box-sizing: border-box;
-}
-
-.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.container .product-item {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 20px 30px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--product-item-background);
-    box-shadow: 0 10px 25px var(--product-item-shadow);
-    backdrop-filter: blur(15px);
-}
-
-.container .product-item .img-box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    transition: 500ms ease-in-out;
-}
-
-.container .product-item:hover .img-box {
-    transform: translateY(-150px);
-}
-
-.container .product-item .img-box img {
-    width: 100%;
-    margin: 0 0 20px;
-    transition: 500ms ease-in-out;
-}
-
-.container .product-item .img-box h2 {
-    color: var(--h2-color);
-    font-weight: 600;
-}
-
-.container .product-item .content {
-    bottom: 10px;
-    position: absolute;
-    padding: 20px;
-    font-size: 15px;
-    transition: 500ms ease-in-out;
-    color: var(--text-color);
-    opacity: 0;
-    visibility: hidden;
-}
-
-.container .product-item:hover .content {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 250ms;
 }
 
 footer {
