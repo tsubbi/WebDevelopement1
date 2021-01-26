@@ -7,28 +7,7 @@
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import "./header.css";
 @import "./content.css";
-
-
-:root {
-    /* header color */
-    --logo-color: #367aca;
-    --background-color: #fff5ee;
-    --header-shadow: #00000051;
-    --unselected-text-color: #262626;
-    --selected-text-color: #f5f5f5;
-    /* body color */
-    --product-item-background: #ffffff0d;
-    --product-item-shadow: #0000004d;
-    --h2-color: #c35371;
-    --text-color: #002465;
-    /* footer color */
-    --footer-text-color: #7a8195;
-    --footer-background: #abd7ef;
-    --facebook-color: #3b5998;
-    --twitter-color: #1da1f2;
-    --youtube-color: #e62117;
-    --telegram-color: #0088cc;
-}
+@import "./color.css";
 
 body {
     margin: 0;
