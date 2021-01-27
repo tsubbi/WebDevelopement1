@@ -1,0 +1,44 @@
+:root {
+    --header-layout-color: #ffbf65;
+    --navbar-layout-color: #ff5765;
+    --content-layout-color: #ff96c5;
+    --aside-layout-color: #8dd7bf;
+    --footer-layout-color: #00a5e3;
+    --grid-center-text-color: seashell;
+}
+
+.logo-container {
+    width: 200px;
+    position: absolute;
+    /* background-color: wheat; */
+    /* position: relative; */
+}
+.logo-container::before {
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.logo-container .logo-bottom-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--footer-layout-color);
+    clip-path: polygon(55% 30%, 100% 30%, 100% 50%, 40% 50%);
+}
+
+.logo-container .logo-middle-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--navbar-layout-color);
+    clip-path: polygon(55% 30%, 65% 50%, 65% 80%, 45% 100%, 70% 100%, 85% 85%, 85% 50%, 75% 30%);
+}
+
+.logo-container .logo-top-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--header-layout-color);
+    clip-path: polygon(40% 0%, 0% 50%, 40% 100%, 65% 100%, 25% 50%, 65% 0%);
+}
