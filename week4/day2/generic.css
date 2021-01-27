@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 :root {
     --header-layout-color: #ffbf65;
     --navbar-layout-color: #ff5765;
@@ -5,6 +7,11 @@
     --aside-layout-color: #8dd7bf;
     --footer-layout-color: #00a5e3;
     --copyright-layout-color: #74737a;
+
+    --background-navy-color: #0b0949;
+
+    /* seashell color */
+    --header-background-color: #0060A580;
     --header-logo-color: seashell;
 }
 
@@ -29,12 +36,59 @@ body {
 header {
     grid-column: 1/6;
     grid-row: 1/3;
+    background: var(--header-background-color);
+    display: grid;
+    grid-template: 20px auto 20px / repeat(25, 4vw);
+}
+
+header .header-container {
+    grid-row: 2/3;
+    grid-column: 20/24;
+    max-height: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .header-container .logo  {
+    position: relative;
+    height: 100%;
+}
+
+header .header-container .logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+}
+
+header .header-container .logo-name {
+    grid-column: 17/19;
+    grid-row: 2/3;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--header-logo-color);
+    font-size: 4vw;
+    padding: 0 5px;
 }
 
 /* nav bar */
 nav {
     grid-column: 1/6;
     grid-row: 3/9;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(40, 1fr);
+}
+
+nav .img-box {
+    grid-column: 1/41;
+    grid-row: 1/6;
+}
+
+nav .img-box img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 section:nth-child(3) {
@@ -65,6 +119,7 @@ footer {
     display: grid;
     align-items: center;
     justify-content: center;
+    color: var(--grid-center-text-color);
     font-size: 40px;
     font-weight: 800;
     font-family: 'Courier New', Courier, monospace;
