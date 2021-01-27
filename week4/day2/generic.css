@@ -1,0 +1,71 @@
+:root {
+    --header-layout-color: #ffbf65;
+    --navbar-layout-color: #ff5765;
+    --content-layout-color: #ff96c5;
+    --aside-layout-color: #8dd7bf;
+    --footer-layout-color: #00a5e3;
+    --copyright-layout-color: #74737a;
+    --header-logo-color: seashell;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-navy-color);
+}
+
+.container {
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+    /* I make grid consist with 5 columns and 40 rows */
+    grid-template: repeat(40, 10vh) / repeat(5, 1fr);
+    gap: 3px;
+}
+
+/* header */
+header {
+    grid-column: 1/6;
+    grid-row: 1/3;
+}
+
+/* nav bar */
+nav {
+    grid-column: 1/6;
+    grid-row: 3/9;
+}
+
+section:nth-child(3) {
+    background: var(--content-layout-color);
+    grid-column: 1/4;
+    grid-row: 9/17;
+}
+
+section:nth-child(4) {
+    background: var(--aside-layout-color);
+    grid-column: 4/6;
+    grid-row: 9/17;    
+}
+
+footer {
+    background: var(--footer-layout-color);
+    grid-column: 1/6;
+    grid-row: 17/20;
+}
+
+.copyright {
+    background: var(--copyright-layout-color);
+    grid-column: 1/6;
+    grid-row: 20/21;
+}
+
+.grid-center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
