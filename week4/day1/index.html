@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./global.css">
+</head>
+<body>
+    <!-- responsive header -->
+    <header>
+        <a href="#" class="logo">paradise</a>
+        <div class="menu-toggle" onclick="menuToggle()"></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="selected">Item1</a></li>
+                <li><a href="#">Item2</a></li>
+                <li><a href="#">Item3</a></li>
+                <li><a href="#">Item4</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+
+    <!-- section is in wrap  -->
+    <section>
+        <div class="container">
+            <div class="product-item">
+                <div class="img-box">
+                    <img src="https://newtownsquarevet.com/wp-content/uploads/2017/01/kitten-pounce.png" alt="">
+                    <h2>Product 1</h2>
+                </div>
+                <div class="content">
+                    <p>Tempore doloremque laboriosam pariatur nemo modi impedit numquam ex blanditiis vel saepe similique debitis soluta, possimus quibusdam iusto iure aliquam illo deserunt</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="img-box">
+                    <img src="https://newtownsquarevet.com/wp-content/uploads/2017/01/kitten-pounce.png" alt="">
+                    <h2>Product 2</h2>
+                </div>
+                <div class="content">
+                    <p>Eum numquam fugit nostrum harum voluptates illo aut recusandae maiores ex tenetur assumenda cum, odio magni voluptas corporis labore nisi ipsam praesentium?</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="img-box">
+                    <img src="https://newtownsquarevet.com/wp-content/uploads/2017/01/kitten-pounce.png" alt="">
+                    <h2>Product 3</h2>
+                </div>
+                <div class="content">
+                    <p>Repellat aut quod dolorem temporibus exercitationem voluptas perspiciatis praesentium sint, quidem ipsa doloremque ipsum accusantium porro maiores quo?</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="img-box">
+                    <img src="https://newtownsquarevet.com/wp-content/uploads/2017/01/kitten-pounce.png" alt="">
+                    <h2>Product 4</h2>
+                </div>
+                <div class="content">
+                    <p>Deserunt ipsum veniam, officiis accusamus quasi qui voluptatum praesentium a reprehenderit unde similique magnam in magni recusandae minus quisquam deleniti sint? Maiores.</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="img-box">
+                    <img src="https://newtownsquarevet.com/wp-content/uploads/2017/01/kitten-pounce.png" alt="">
+                    <h2>Product 5</h2>
+                </div>
+                <div class="content">
+                    <p>Aliquid perferendis cupiditate alias voluptatum omnis quidem, molestias unde aperiam aliquam, ducimus distinctio at, numquam iure eius quis similique odit. Assumenda, nam.</p>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="img-box">
+                    <img src="https://newtownsquarevet.com/wp-content/uploads/2017/01/kitten-pounce.png" alt="">
+                    <h2>Product 6</h2>
+                </div>
+                <div class="content">
+                    <p>Omnis temporibus ipsum deleniti magnam facere dolores provident recusandae, natus, delectus, reiciendis corrupti voluptatibus. Tempora enim deleniti suscipit distinctio excepturi, corporis molestiae.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- responsive footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="section summary">
+                <h2>summary</h2>
+                <p>Esse, dolores voluptatibus architecto harum expedita ipsum atque tempora natus, ducimus veniam voluptates labore, iste dolorem doloribus corrupti cupiditate veritatis voluptatum magni?</p>
+
+                <ul class="footer-social-media">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                </ul>    
+            </div>
+
+            <div class="section quick-link">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Item1</a></li>
+                    <li><a href="#">Item2</a></li>
+                    <li><a href="#">Item3</a></li>
+                    <li><a href="#">Item4</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2021 Jamie abcd efgh ijkl mnop qrst uvwx yz. All Right Reserved.</p>
+    </div>
+
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+
+            toggleMenu.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

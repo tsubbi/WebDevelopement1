@@ -1,0 +1,90 @@
+/* inspired from 
+- Responsive Navigation Bar: https://www.youtube.com/watch?v=kEt5DCHeyJo 
+- Glassmorphism Product Card UI Design: https://www.youtube.com/watch?v=kEt5DCHeyJo 
+- Responsive Fotter Section: https://www.youtube.com/watch?v=B4KZYsyuVOE
+*/
+
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import "./css/header.css";
+@import "./css/content.css";
+@import "./css/color.css";
+@import "./css/footer.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(https://img.wallpapersafari.com/desktop/1920/1080/38/39/BiOeu5.jpg) center fixed;
+    background-size: cover;
+}
+
+@media (max-width: 1200px) {
+    header {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: var(--logo-color);
+    }
+
+    .menu-toggle::before {
+        content: '\f107';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+
+    .menu-toggle.active::before {
+        content: '\f106';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+        width: 100%;
+    }
+
+    nav.active ul{
+        display: block;
+    }
+
+    nav.active ul li a {
+        margin: 0;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+    footer .footer-container .section {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .footer-container .section.summary, 
+    footer .footer-container .section.quick-link {
+        width: 100%;
+    }
+
+    .copyright {
+        padding: 8px 40px;
+    }
+}

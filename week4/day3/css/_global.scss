@@ -1,0 +1,23 @@
+@import './global/color';
+@import './global/variable';
+@import './global/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.section-container {
+    box-shadow: 0 5px 15px $global-shadowColor;
+    padding: 20px;
+}
+
+.subtitle {
+    margin: 0;
+    padding: 5px 50px;
+    font-family: $ubuntu-font;
+    color: $global-lightColor;
+    font-weight: bolder;
+
+    span {
+        font-weight: 300;
+    }
+}

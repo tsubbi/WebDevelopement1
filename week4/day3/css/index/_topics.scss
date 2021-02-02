@@ -1,0 +1,25 @@
+.topics {
+    grid-column: 2/20;
+    grid-row: 14/22;
+    
+    .topics-container {
+        overflow: auto;
+        white-space: nowrap;
+        margin: 10px;
+                
+        a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: $global-lightColor;
+            display: inline-block;
+            text-decoration: none;
+            padding: 110px 140px;
+            border-radius: 10px;
+        }
+
+        @for $i from 1 through 6 {
+            a:nth-child(#{$i}) {
+                @include random-rbg;
+            }
+        }
+    }
+}

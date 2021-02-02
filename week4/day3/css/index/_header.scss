@@ -1,0 +1,42 @@
+@import '../global';
+
+header {
+    background: $header-backgroundColor;
+    grid-row: 1/3;
+    grid-column: 1/21;
+
+    display: grid;
+    grid-template-rows: 10px auto 10px;
+    grid-template-columns: 10px repeat(20, 1fr) 10px;
+    z-index: 10;
+
+    .logo-container {
+        grid-row: 2/3;
+        grid-column-end: 21;
+        width: 18vh;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .logo-img-box {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            max-height: 100%;
+            margin: 0 5px;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .logo-name {
+            font-family: $ubuntu-font;
+            color: $global-lightColor;
+            font-size: 5vh;
+            padding: 0 3px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+header {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: var(--background-color);
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px var(--header-shadow);
+}
+
+.logo {
+    color: var(--logo-color);
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--unselected-text-color);
+}
+
+nav ul li a.selected,
+nav ul li a:hover {
+    background: var(--logo-color);
+    color: var(--selected-text-color);
+    transition: 500ms;
+}

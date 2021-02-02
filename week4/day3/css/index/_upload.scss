@@ -1,0 +1,39 @@
+.uploads {
+    grid-column: 2/20;
+    grid-row: 23/31;
+
+    .upload-container {
+        // left: calc(50% - 300px);
+        display: flex;
+        margin-top: 20px;
+        
+        .img-item {
+            display: flex;
+            height: 225px;
+            width: 300px;
+            background: url($photo-post-img) 10%;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: -1rem 0 3rem black;
+            transition: 400ms ease-out;
+            position: relative;
+            left: 8px;
+        }
+
+        .img-item:not(:first-child) {
+            margin-left: -50px;
+        }
+
+        .img-item:hover {
+            transform: translateY(-20px);
+            transition: 400ms ease-out;
+        }
+
+        .img-item:hover ~ .img-item {
+            position: relative;
+            left: 40px;
+            transition: 400ms ease-out;
+        }
+    }
+}

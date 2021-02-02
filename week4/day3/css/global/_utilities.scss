@@ -1,0 +1,8 @@
+// move list 
+@mixin list-location($i) {
+    margin: 10px 2vw 10px (2vw + ($i * 1.5vw));
+}
+
+@mixin random-rbg() {
+    background: rgb(random(255), random(255), random(255));
+}

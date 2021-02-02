@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+.section-container {
+  -webkit-box-shadow: 0 5px 15px #00000077;
+          box-shadow: 0 5px 15px #00000077;
+  padding: 20px;
+}
+
+.subtitle {
+  margin: 0;
+  padding: 5px 50px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff5ee;
+  font-weight: bolder;
+}
+
+.subtitle span {
+  font-weight: 300;
+}
+
+header {
+  background: #0060a580;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10px auto 10px;
+      grid-template-rows: 10px auto 10px;
+  -ms-grid-columns: 10px (1fr)[20] 10px;
+      grid-template-columns: 10px repeat(20, 1fr) 10px;
+  z-index: 10;
+}
+
+header .logo-container {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  grid-column-end: 21;
+  width: 18vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .logo-container .logo-img-box {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  max-height: 100%;
+  margin: 0 5px;
+}
+
+header .logo-container .logo-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .logo-container .logo-name {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff5ee;
+  font-size: 5vh;
+  padding: 0 3px;
+}
+
+.full-screen-nav-style {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 10;
+  grid-row: 3/13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 20;
+  grid-column: 1/21;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+  -ms-grid-columns: (1fr)[40];
+      grid-template: repeat(5, 1fr)/repeat(40, 1fr);
+}
+
+.full-screen-nav-style .nav-bg {
+  width: 100vw;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 40;
+  grid-column: 1/41;
+  z-index: 1;
+}
+
+.full-screen-nav-style .nav-bg img {
+  opacity: 0.1;
+  max-height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.full-screen-nav-style .seperation {
+  content: '';
+  background: #38001777;
+  width: 30px;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+  -ms-grid-column: 15;
+      grid-column-start: 15;
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
+  z-index: 2;
+}
+
+.full-screen-nav-style .nav-img-box {
+  width: 100vw;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 40;
+  grid-column: 1/41;
+  z-index: 10;
+}
+
+.full-screen-nav-style .nav-img-box img {
+  max-height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.full-screen-nav-style .nav-list {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+  padding: 10px;
+  z-index: 10;
+  display: inline-block;
+  list-style: none;
+}
+
+.full-screen-nav-style .nav-list li {
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  background: #fff5ee;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.full-screen-nav-style .nav-list li a {
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #231a5c;
+}
+
+.full-screen-nav-style .nav-list li:hover {
+  background: #fcb14f;
+}
+
+.full-screen-nav-style .nav-list li:hover a {
+  color: #fff5ee;
+}
+
+.full-screen-nav-style .nav-list li:nth-child(1) {
+  margin: 10px 2vw 10px 3.5vw;
+}
+
+.full-screen-nav-style .nav-list li:nth-child(2) {
+  margin: 10px 2vw 10px 5vw;
+}
+
+.full-screen-nav-style .nav-list li:nth-child(3) {
+  margin: 10px 2vw 10px 6.5vw;
+}
+
+.full-screen-nav-style .nav-list li:nth-child(4) {
+  margin: 10px 2vw 10px 8vw;
+}
+
+.full-screen-nav-style .nav-list li:nth-child(5) {
+  margin: 10px 2vw 10px 9.5vw;
+}
+
+.full-screen-nav-style .nav-list li:nth-child(6) {
+  margin: 10px 2vw 10px 11vw;
+}
+
+.topics {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 18;
+  grid-column: 2/20;
+  -ms-grid-row: 14;
+  -ms-grid-row-span: 8;
+  grid-row: 14/22;
+}
+
+.topics .topics-container {
+  overflow: auto;
+  white-space: nowrap;
+  margin: 10px;
+}
+
+.topics .topics-container a {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff5ee;
+  display: inline-block;
+  text-decoration: none;
+  padding: 110px 140px;
+  border-radius: 10px;
+}
+
+.topics .topics-container a:nth-child(1) {
+  background: #345cea;
+}
+
+.topics .topics-container a:nth-child(2) {
+  background: #8919da;
+}
+
+.topics .topics-container a:nth-child(3) {
+  background: #292907;
+}
+
+.topics .topics-container a:nth-child(4) {
+  background: #125ec5;
+}
+
+.topics .topics-container a:nth-child(5) {
+  background: #8bfd5f;
+}
+
+.topics .topics-container a:nth-child(6) {
+  background: #a38c96;
+}
+
+.uploads {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 18;
+  grid-column: 2/20;
+  -ms-grid-row: 23;
+  -ms-grid-row-span: 8;
+  grid-row: 23/31;
+}
+
+.uploads .upload-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.uploads .upload-container .img-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 225px;
+  width: 300px;
+  background: url("https://blog.raynatours.com/wp-content/uploads/2015/04/Aurora-Borealis-North-Pole-e1563951566852.jpg") 10%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: -1rem 0 3rem black;
+          box-shadow: -1rem 0 3rem black;
+  -webkit-transition: 400ms ease-out;
+  transition: 400ms ease-out;
+  position: relative;
+  left: 8px;
+}
+
+.uploads .upload-container .img-item:not(:first-child) {
+  margin-left: -50px;
+}
+
+.uploads .upload-container .img-item:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 400ms ease-out;
+  transition: 400ms ease-out;
+}
+
+.uploads .upload-container .img-item:hover ~ .img-item {
+  position: relative;
+  left: 40px;
+  -webkit-transition: 400ms ease-out;
+  transition: 400ms ease-out;
+}
+
+.section-container {
+  -webkit-box-shadow: 0 5px 15px #00000077;
+          box-shadow: 0 5px 15px #00000077;
+  padding: 20px;
+}
+
+.subtitle {
+  margin: 0;
+  padding: 5px 50px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff5ee;
+  font-weight: bolder;
+}
+
+.subtitle span {
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .body-container {
+  background: #0b0949;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (5vh)[32];
+  -ms-grid-columns: (1fr)[20];
+      grid-template: repeat(32, 5vh)/repeat(20, 1fr);
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  header .logo-container {
+    -ms-grid-column: 11;
+        grid-column-start: 11;
+  }
+  header .logo-container .logo-name {
+    visibility: hidden;
+  }
+  nav .nav-bg {
+    visibility: hidden;
+  }
+  nav .nav-img-box {
+    width: 100vw;
+    height: 100%;
+  }
+  nav .seperation {
+    visibility: hidden;
+  }
+  nav .nav-list {
+    visibility: hidden;
+  }
+  .uploads .upload-container {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .uploads .upload-container .img-item {
+    text-align: center;
+  }
+  .uploads .upload-container .img-item:not(:first-child) {
+    margin-left: -50px;
+    visibility: hidden;
+    height: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,69 @@
+@import './index/header';
+@import './index/navbar-index';
+@import './index/topics';
+@import './index/upload';
+
+@import './global';
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .body-container {
+        background: $baseColor;
+        display: grid;
+        grid-template: repeat(32, 5vh) / repeat(20, 1fr);
+        width: 100vw;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .logo-container {
+            grid-column-start: 11;
+            .logo-name {
+                visibility: hidden;
+            }
+        }
+    }
+
+    nav {
+        .nav-bg {
+            visibility: hidden;
+        }
+
+        .nav-img-box {
+            width: 100vw;
+            height: 100%;
+        }
+
+        .seperation {
+            visibility: hidden;
+        }
+
+        .nav-list {
+            visibility: hidden;
+        }
+    }
+    
+    .uploads {
+        .upload-container {
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .img-item {
+                text-align: center;
+            }
+            
+            .img-item:not(:first-child) {
+                margin-left: -50px;
+                visibility: hidden;
+                height: 0;
+            }
+        }
+    }
+}

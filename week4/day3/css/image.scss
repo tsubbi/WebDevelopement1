@@ -1,0 +1,64 @@
+@import './global';
+@import './index/header';
+@import './image/image-view';
+@import './image/add-comment';
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $baseColor;
+
+    .body-container {
+        display: grid;
+        grid-template: repeat(32, 5vh) / repeat(20, 1fr);
+        width: 100vw;
+        color: $global-lightColor;
+        font-family: $ubuntu-font;
+        
+        .fa {
+            font-size: 5vh;
+            top: 0%;
+        }
+
+        .comment {
+            .content {
+                font-weight: 300;
+            }
+        }
+    }
+    
+    .comment-container {
+        grid-column: 3/18;
+        grid-row: 29/32;
+        display: grid;
+        grid-template: 20px / 10vh auto;
+        gap: 5px;
+
+        p {
+            margin-block: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        .logo-container {
+            grid-column-start: 11;
+            .logo-name {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .img-info {
+        grid-row: 2/4;
+    }
+
+    .image-view {
+        grid-row: 5/23;
+        grid-column: 1/21;
+    }
+}

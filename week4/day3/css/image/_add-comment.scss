@@ -1,0 +1,43 @@
+.add-comment {
+    grid-column: 3/18;
+    grid-row: 24/27;
+    display: grid;
+    grid-template: auto / 10vh auto;
+    gap: 10px;
+    position: relative;
+
+    .single-form {
+        position: relative;
+        margin-bottom: 30px;
+        margin-block: 0 0;
+
+        textarea {
+            grid-column-end: 3;
+            width: 97.5%;
+            height: 100%;
+            padding: 10px;
+        }
+
+        textarea:focus + label,
+        textarea:valid + label {
+            font-size: 0.8em;
+            font-weight: bold;
+            color: $global-lightColor;
+            top: -25px;
+        }
+
+        textarea:focus + label::after,
+        textarea:valid + label::after {
+            content: ':';
+        }
+
+        label {
+            position: absolute;
+            top: 3px;
+            left: 10px;
+            color: #777777;
+            font-size: 15px;
+            transition: 500ms;
+        }
+    }
+}

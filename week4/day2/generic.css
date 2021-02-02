@@ -1,0 +1,121 @@
+:root {
+    --header-layout-color: #ffbf65;
+    --navbar-layout-color: #ff5765;
+    --content-layout-color: #ff96c5;
+    --aside-layout-color: #8dd7bf;
+    --footer-layout-color: #00a5e3;
+    --copyright-layout-color: #74737a;
+    --header-logo-color: seashell;
+    --article-layout-color: #C4618F;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-navy-color);
+}
+
+.container {
+    width: 100vw;
+    height: fit-content;
+    display: grid;
+    /* I make grid consist with 5 columns and 20 rows */
+    grid-template: repeat(20, 10vh) / repeat(5, 1fr);
+    gap: 3px;
+}
+
+header {
+    grid-column: 1/6;
+    grid-row: 1/3;
+    background: var(--header-layout-color);
+}
+
+nav {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    background: var(--navbar-layout-color);
+}
+
+section {
+    background: var(--content-layout-color);
+    grid-column: 1/4;
+    grid-row: 4/17;
+    position: relative;
+    display: grid;
+    grid-template: 80px repeat(2, 1fr) 20px / 20px auto 20px;
+}
+
+section > p {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+section .article {
+    background: var(--article-layout-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    grid-row: 2/3;
+    grid-column: 2/3;
+    position: relative;
+    display: grid;
+    grid-template: 20px 50px auto 20px / 20px auto 20px;
+}
+
+section .article h3 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+section .article p {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+aside {
+    background: var(--aside-layout-color);
+    grid-column: 4/6;
+    grid-row: 4/17;    
+}
+
+footer {
+    background: var(--footer-layout-color);
+    grid-column: 1/6;
+    grid-row: 17/20;
+}
+
+.copyright {
+    background: var(--copyright-layout-color);
+    grid-column: 1/6;
+    grid-row: 20/21;
+}
+
+.grid-center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-style {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--header-logo-color);
+}
+
+@media (max-width: 768px) {
+    aside {
+        visibility: hidden;
+    }
+
+    section {
+        grid-column-end: 6;
+        grid-row-start: 3;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+}
