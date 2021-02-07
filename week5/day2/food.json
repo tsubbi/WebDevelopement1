@@ -1,0 +1,64 @@
+{
+    "foods" : [
+        {
+            "name": "Pizza(personal)",
+            "price": 7,
+            "popularity": "High"
+        },
+        {
+            "name": "Pasta",
+            "price": 15,
+            "popularity": "Average"
+        },
+        {
+            "name": "Salad",
+            "price": 10,
+            "popularity": "Low"
+        },
+        {
+            "name": "Hamberger",
+            "price": 7,
+            "popularity": "Average"
+        },
+        {
+            "name": "Sandwich",
+            "price": 4,
+            "popularity": "Low"
+        },
+        {
+            "name": "Bubble Tea",
+            "price": 5,
+            "popularity": "High"
+        },
+        {
+            "name": "Fried Rice",
+            "price": 12,
+            "popularity": "Average"
+        },
+        {
+            "name": "Soda Pop",
+            "price": 3,
+            "popularity": "High"
+        },
+        {
+            "name": "Water",
+            "price": 1,
+            "popularity": "Low"
+        },
+        {
+            "name": "Candies",
+            "price": 2,
+            "popularity": "High"
+        },
+        {
+            "name": "Chips",
+            "price": 4,
+            "popularity": "High"
+        },
+        {
+            "name": "Cooked Broccoli",
+            "price": 1,
+            "popularity": "Low"
+        }
+    ]
+}

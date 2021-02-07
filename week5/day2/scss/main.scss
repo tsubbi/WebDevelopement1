@@ -1,0 +1,112 @@
+@import './styleSetting';
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: $noto_sans;    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table-info {
+    background: getColor(primaryColor);
+    color: getColor(headerAltColor);
+    font-family: $ubuntu;
+    width: 100vw;
+    text-align: left;
+    th {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+#food-data {
+    tr, td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd
+    }
+
+    tr:nth-child(odd) {
+        background: getColor(tableBgColor);
+    }
+    tr:nth-child(even) {
+        background: getColor(headerAltColor);
+    }
+
+    tr:hover {
+        background: lightgray;
+    }
+}
+
+form {
+    width: 100%;
+    height: 10vh;
+    padding-top: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    input {
+        width: 25%;
+        padding: 5px 10px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+    }
+
+    select {
+        // appearance: none;
+        outline: none;
+        border: none;
+        padding: 0.8rem;
+    }
+
+    #popularity-input {
+        color: getColor(primaryColor);
+        width: 10rem;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    select {
+        padding: 1rem;
+        position: relative;
+
+        &::after {
+            content: '\f0dd';
+            position: absolute;
+            top: -30px;
+            right: 0;    
+        }
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(45deg, #f6d365, #fda085);
+        // background: linear-gradient(45deg, #e2c35d, #d88771);
+        color: getColor(headerAltColor);
+        border-radius: 50%;
+        font-size: 1.5rem;
+        border: none;
+        outline: none;
+        box-shadow: 3px 3px 5px rgba($color: #000000, $alpha: 0.2);
+        transition: all 300ms ease;
+        &:hover {
+            box-shadow: 6px 6px 10px rgba($color: #000000, $alpha: 0.3);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 4) Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched". -->
+    <button onclick="prepare()">Try it</button>
+    <script>
+        function prepare() {
+            let randomNum = Math.floor((Math.random() * 10) + 1);
+
+            guessNumber()
+
+            function guessNumber() {
+
+                let promptedInput = prompt('Guess a number from 1-10: ');
+
+                if (promptedInput > 10 || promptedInput < 1) {
+                    alert(`This is an invalid input`);
+                } else {
+                    if (promptedInput != randomNum) {
+                        (promptedInput < randomNum) ? alert(`${promptedInput} is not matched! The number is higher`) : alert(`${promptedInput} is not matched! The number is lower`);
+                        guessNumber();
+                    } else {
+                        alert(`Good Work! It is ${randomNum}`);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

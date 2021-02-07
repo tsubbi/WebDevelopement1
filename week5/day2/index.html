@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week5 Lab2</title>
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- food table -->
+            <div id="food-list">
+                <table>
+                    <thead class="table-info">
+                        <th data-column="name">Name</th>
+                        <th data-column="price">Price</th>
+                        <th data-column="popularity">Popularity</th>
+                    </thead>
+                    <tbody id="food-data"></tbody>
+                </table>
+            </div>
+
+            <!-- add food -->
+            <form>
+
+                <input type="text" class="name-input">
+                <input type="text" class="price-input">
+                <!-- <input type="text" class="popularity-input"> -->
+                <select name="popularity" id="popularity-input">
+                    <option value="High">High</option>
+                    <option value="Average">Average</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button class="add-food" type="submit"><i class="fa fa-plus"></i></button>
+            </form>
+        </div>
+    </body>
+
+    <script src="./js/app.js"></script>
+</html>
