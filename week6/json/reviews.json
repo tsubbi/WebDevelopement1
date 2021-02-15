@@ -1,0 +1,49 @@
+{
+    "reviews" : [
+        {
+            "img_url" : "./images/comment/people1.jpg",
+            "review_text" : "Vero soluta quibusdam porro dolorem, laboriosam exercitationem minima earum provident commodi natus nulla consequuntur eos, accusantium, fugiat est voluptates at corrupti delectus.",
+            "user_name" : "Jane Doe"
+        },
+        {
+            "img_url" : "./images/comment/people2.jpg",
+            "review_text" : "Sequi accusantium deserunt saepe vitae qui eum dolore libero perspiciatis esse delectus dolores ipsum unde fugit obcaecati excepturi, laboriosam repellat consequuntur incidunt.",
+            "user_name" : "John Doe"
+        },
+        {
+            "img_url" : "./images/comment/people3.jpg",
+            "review_text" : "Maxime amet fugiat quaerat, impedit modi dignissimos minus exercitationem aliquam? Beatae enim minus quas amet nobis explicabo non vero ea ipsa incidunt.",
+            "user_name" : "Jane Doe"
+        },
+        {
+            "img_url" : "./images/comment/people4.jpg",
+            "review_text" : "Quis rem, minus dolore optio quasi quae sunt mollitia vero molestiae ex quibusdam praesentium obcaecati sequi voluptatem impedit autem, dolor distinctio molestias.",
+            "user_name" : "Jane Doe"
+        },
+        {
+            "img_url" : "./images/comment/people5.jpg",
+            "review_text" : "Earum, error placeat. Dolore fugit in repudiandae dolorum praesentium enim nisi consequatur blanditiis, sequi voluptas, nulla accusantium magnam id saepe eum. Iure.",
+            "user_name" : "Jane Doe"
+        },
+        {
+            "img_url" : "./images/comment/people6.jpg",
+            "review_text" : "Iste esse error sequi consequuntur dicta. Quisquam rem, sint consequuntur harum facilis nulla nam placeat magnam modi voluptate provident qui deserunt nesciunt nobis!",
+            "user_name" : "Jane Doe"
+        },
+        {
+            "img_url" : "./images/comment/people7.jpg",
+            "review_text" : "Dolores minima dignissimos veniam dicta est, ab nesciunt, in ea aspernatur reprehenderit doloribus cumque debitis ipsam sit, voluptatum recusandae! Quaerat, excepturi minima.",
+            "user_name" : "Jane Doe"
+        },
+        {
+            "img_url" : "./images/comment/people8.jpg",
+            "review_text" : "Nostrum corporis dicta illum alias nisi non eius iure hic enim nesciunt, provident facere sequi beatae at. Consequuntur mollitia nesciunt cum magni.",
+            "user_name" : "Jane Doe"
+        },
+        {
+            "img_url" : "./images/comment/people9.jpg",
+            "review_text" : "Consectetur vero et, maiores tenetur voluptas adipisci deleniti, illo, cumque nemo impedit cum unde placeat quisquam facilis dignissimos eos velit maxime corrupti.",
+            "user_name" : "Jane Doe"
+        }
+    ]
+}

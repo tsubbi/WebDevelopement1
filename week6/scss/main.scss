@@ -1,0 +1,121 @@
+// basic style
+@import './styleSettings';
+// components style
+@import './banner';
+@import './header';
+@import './about';
+@import './menu';
+@import './chef';
+@import './reviews';
+@import './contact';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $poppins;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 1000px;
+    background: getColor(primaryLightColor);
+    
+    &.food-details {
+        overflow: hidden;
+    }
+}
+
+p {
+    font-weight: 300;
+    color: getColor(defaultDarkColor);
+}
+
+section {
+    padding: 100px;
+}
+
+// ! used in menu and banner section
+.button {
+    @extend %buttonStyle;
+
+    &:hover {
+        letter-spacing: 6px;
+    }
+}
+
+// ! used in every section header
+.titleText {
+    @include textSytle(2em, getColor(defaultDarkColor));
+    font-weight: 300;
+    text-transform: uppercase;
+
+    span {
+        @include textSytle(1.5em, getColor(accentRedColor));
+        font-weight: 700;
+    }
+}
+
+.title {
+    width: 100%;
+    @include flex-center(column);
+}
+
+// ! used in menu, reviews, and chefs section
+.box { 
+    @include flex-center(column);
+    justify-content: space-between;
+
+    .img-box {
+        position: relative;
+        width: 100%;
+        height: 300px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .text {
+        padding: 15px 0 5px;
+
+        h3 {
+            font-weight: 400;
+            color: getColor(defaultDarkColor);
+        }
+    }
+}
+
+.copyrightText {
+    padding: 8px 40px;
+    border-top: 1px solid boxShadow(black, 0.1);
+    text-align: center;
+
+    a {
+        color: getColor(accentRedColor);
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 20px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+}

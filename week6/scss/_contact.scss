@@ -1,0 +1,103 @@
+// TODO: use float label and underline textfield
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap');
+
+.contact {
+    background: url(../images/bg3.jpg);
+    background-size: cover;
+
+    &-form {
+        padding: 75px 50px;
+        background: getColor(accentLightColor);
+        box-shadow: 0 15px 50px boxShadow(black, 0.1);
+        max-width: 500px;
+        margin-top: 50px;
+        overflow: hidden;
+        position: relative;
+        
+        .lines {
+            position: absolute;
+            border-left: 1px solid getColor(accentRedColor);
+            border-right: 1px solid getColor(accentRedColor);
+            width: 3px;
+            float: left;
+            height: 100%;
+            margin-top: -75px;
+            margin-left: -25px;
+        }
+
+        h3 {
+            color: getColor(defaultDarkColor);
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .singleForm {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+
+            input, textarea {
+                width: 100%;
+                border: 0;
+                font-family: 'Caveat', cursive;
+                background: getColor(accentLightColor);
+                border-bottom: 2px solid getColor(defaultGrayColor);
+                padding: 10px;
+                color: getColor(defaultGrayColor);
+                outline: none;
+                font-size: 16px;
+                font-weight: 300;
+                resize: none;
+                transition: 500ms;
+            }
+            textarea {
+                height: 120px;
+            }
+
+            input:focus + label,
+            input:valid + label,
+            textarea:focus + label,
+            textarea:valid + label {
+                font-size: 0.5em;
+                font-weight: bold;
+                top: -5px;
+                color: getColor(accentRedColor);
+            }
+
+            input:focus,
+            input:valid,
+            textarea:focus,
+            textarea:valid {
+                border-bottom: 2px solid getColor(accentRedColor);
+                transition: 500ms;
+            }
+
+            label {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: getColor(defaultGrayColor);
+                font-size: 15px;
+                transition: 500ms;
+            }
+        }
+
+        .submit-button input[type="submit"] {
+            @extend %buttonStyle;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .contact {
+        &-form {
+            padding: 35px 40px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}

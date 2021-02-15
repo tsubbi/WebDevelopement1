@@ -1,0 +1,83 @@
+// TODO: change design if needed
+.reviews {
+    background: url(../images/bg2.jpg);
+    background-size: cover;
+
+    .white {
+        .titleText, p {
+            color: getColor(primaryLightColor);
+        }
+    }
+
+    &-content {
+        @include content;
+
+        .box {
+            width: 340px;
+            margin: 20px;
+            padding: 40px;
+            background: getColor(primaryLightColor);
+            flex-direction: column;
+
+            .img-box {
+                position: relative;
+                width: 80px;
+                height: 80px;
+                margin-bottom: 20px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .text {
+                text-align: center;
+
+                // https://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/
+                blockquote {
+                    font-weight: 300;
+                    font-size: 1em;
+                    margin: 0.25em 0;
+                    padding: 0.25em 20px;
+                    line-height: 1.45;
+                    color: getColor(defaultGrayColor);
+                    font-style: italic;
+                    position: relative;
+                
+                    &::before {
+                        display: block;
+                        content: "\201C";
+                        font-size: 4em;
+                        position: absolute;
+                        left: -40px;
+                        top: -20px;
+                        font-family: $noto_sans;
+                        color: getColor(defaultGrayColor);
+                    }
+                
+                    cite {
+                        color: getColor(accentRedColor);
+                        font-size: 1em;
+                        display: block;
+                        margin-top: 5px;
+                        font-weight: 600;
+                        text-align: left;
+                
+                        &::before {
+                            color: getColor(defaultGrayColor);
+                            font-weight: 300;
+                            content: "\2014 \2009";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .reviews {
+        &-content .box {
+            margin: 10px;
+            padding: 20px;
+        }
+    }
+}

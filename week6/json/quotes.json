@@ -1,0 +1,184 @@
+{
+    "quotes": [
+        {
+            "id": 1,
+            "quote_text": "Frankly, my dear, I don't give a damn.",
+            "quote_source": "Gone With the Wind"
+        },
+        {
+            "id": 2,
+            "quote_text": "I'm going to make him an offer he can't refuse.",
+            "quote_source": "The Godfater"
+        },
+        {
+            "id": 3,
+            "quote_text": "May the Force be with you.",
+            "quote_source": "Star Wars"
+        },
+        {
+            "id": 4,
+            "quote_text": "You talking to me?",
+            "quote_source": "Taxi Driver"
+        },
+        {
+            "id": 5,
+            "quote_text": "You're gonna need a bigger boat.",
+            "quote_source": "Jaws"
+        },
+        {
+            "id": 6,
+            "quote_text": "There's no place like home",
+            "quote_source": "The Wizard of Oz"
+        },
+        {
+            "id": 7,
+            "quote_text": "Show me the money!",
+            "quote_source": "Jerry Maguire"
+        },
+        {
+            "id": 8,
+            "quote_text": "I'm walking here! I'm walking here!",
+            "quote_source": "Midnight Cowboy"
+        },
+        {
+            "id": 9,
+            "quote_text": "Houston, we have a problem.",
+            "quote_source": "Apollo 13"
+        },
+        {
+            "id": 10,
+            "quote_text": "Well, nobody's perfect.",
+            "quote_source": "Some Like It Hot"
+        },
+        {
+            "id": 11,
+            "quote_text": "Say “hello” to my little friend!",
+            "quote_source": "Scarface"
+        },
+        {
+            "id": 12,
+            "quote_text": "Bond. James Bond.",
+            "quote_source": "Dr. No"
+        },
+        {
+            "id": 13,
+            "quote_text": "You can't handle the truth!",
+            "quote_source": "A Few Good Men"
+        },
+        {
+            "id": 14,
+            "quote_text": "I'll have what she's having.",
+            "quote_source": "When Harry Met Sally"
+        },
+        {
+            "id": 15,
+            "quote_text": "I see dead people.",
+            "quote_source": "The Sixth Sense"
+        },
+        {
+            "id": 16,
+            "quote_text": "Keep your friends close, but your enemies closer.",
+            "quote_source": "The Godfater II"
+        },
+        {
+            "id": 17,
+            "quote_text": "Here's Johnny!",
+            "quote_source": "The Shining"
+        },
+        {
+            "id": 18,
+            "quote_text": "Hasta la vista, baby.",
+            "quote_source": "Terminator 2: Judgment Day"
+        },
+        {
+            "id": 19,
+            "quote_text": "It takes a great deal of bravery to stand up to your enemies, but a great deal more to stand up to your friends.",
+            "quote_source": "Harry Potter & the Sorcerer’s Stone"
+        },
+        {
+            "id": 20,
+            "quote_text": "Your mind is like this water, my friend. When it is agitated, it becomes difficult to see. But if you allow it to settle, the answer becomes clearer.",
+            "quote_source": "Kung Fu Panda"
+        },
+        {
+            "id": 21,
+            "quote_text": "The past can hurt. But the way I see it, you can either run from it or learn from it.",
+            "quote_source": "The Lion King"
+        },
+        {
+            "id": 22,
+            "quote_text": "Just keep swimming, swimming, swimming.",
+            "quote_source": "Finding Nemo"
+        },
+        {
+            "id": 23,
+            "quote_text": "The very things that hold you down are going to lift you up.",
+            "quote_source": "Dumbo"
+        },
+        {
+            "id": 24,
+            "quote_text": "Ohana means family, family means nobody gets left behind.",
+            "quote_source": "Lilo and Stitch"
+        },
+        {
+            "id": 25,
+            "quote_text": "It is not our abilities that show what we truly are. It is our choices.",
+            "quote_source": "Harry Potter & the Chamber of Secrets"
+        },
+        {
+            "id": 26,
+            "quote_text": "You’re never too old to be young.",
+            "quote_source": "Snow White and the Seven Dwarves"
+        },
+        {
+            "id": 27,
+            "quote_text": "Our fate lies within us. You only have to be brave enough to see it.",
+            "quote_source": "Brave"
+        },
+        {
+            "id": 28,
+            "quote_text": "Hakuna Matata.",
+            "quote_source": "The Lion King"
+        },
+        {
+            "id": 29,
+            "quote_text": "If you hear music, dance.",
+            "quote_source": "Sleeping Beauty"
+        },
+        {
+            "id": 30,
+            "quote_text": "Adventure is out there.",
+            "quote_source": "UP"
+        },
+        {
+            "id": 31,
+            "quote_text": "I can’t stop Andy from growing up…but I wouldn’t miss it for the world.",
+            "quote_source": "Toy Story 2"
+        },
+        {
+            "id": 32,
+            "quote_text": "To infinity and beyond!",
+            "quote_source": "Toy Story"
+        },
+        {
+            "id": 33,
+            "quote_text": "Faster than fast. Quicker than quick. I am Lightning.",
+            "quote_source": "Cars"
+        },
+        {
+            "id": 34,
+            "quote_text": "Ogres are like onions.",
+            "quote_source": "Shrek"
+        },
+        {
+            "id": 35,
+            "quote_text": "No capes!",
+            "quote_source": "The Incredibles"
+        },
+        {
+            "id": 36,
+            "quote_text": "Ahhhh, nature! It’s all over me! Get it off!",
+            "quote_source": "Madagascar"
+        }
+    ]
+}

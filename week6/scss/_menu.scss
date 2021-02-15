@@ -1,0 +1,79 @@
+// TODO: change design to fit my wireframe
+.menu {
+    // menu-content
+    &-content {
+        @include content;
+
+        .box {
+            width: 340px;
+            margin: 20px;
+            border: 15px solid getColor(primaryLightColor);
+            box-shadow: 0 5px 35px boxShadow(black, 0.08);
+        }
+    }
+
+    .foodDetails {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 20;
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(20, 1fr);
+
+        .close-detail {
+            grid-column: 19/20;
+            grid-row: 2/3;
+            right: 60px;
+            top: 20px;
+            width: 80px;
+            height: 40px;
+            color: getColor(defaultDarkColor);
+            text-align: center;
+            place-items: center;
+            cursor: pointer;
+            font-size: 1.2em;
+
+
+            &::after {
+                position: relative;
+                left: 5px;
+                font-family: $fontAwesome;
+                content: getIcon(close);
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                font-size: 1.2em;
+            }
+        }
+
+        .main {
+            position: fixed;
+            width: 80%;
+            height: 70%;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, tomato, #f78571);
+            border-top-left-radius: 50px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .menu {
+        &-content {
+            margin-top: 20px;
+
+            .box {
+                margin: 10px;
+
+                .img-box {
+                    height: 260px;
+                }
+            }
+        }
+    }
+}

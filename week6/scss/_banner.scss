@@ -1,0 +1,39 @@
+// TODO: Change design to fit my wireframe
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/bg_1.jpg);
+    @include flex-center();
+
+    .content {
+        max-width: 900px;
+        text-align: center;
+
+        h2 {
+            @include textSytle(5em, getColor(primaryLightColor));
+            span {
+                color: getColor(accentRedColor);
+            }
+        }
+
+        p {
+            @include textSytle(1em, getColor(primaryLightColor));
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .banner .content h2 {
+        font-size: 3em;
+        color: getColor(primaryLightColor);
+    }
+}
+
+@media (max-width: 375px) {
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: getColor(primaryLightColor);
+    }
+}

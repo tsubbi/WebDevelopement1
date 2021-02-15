@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/jquery.gsap.min.js"></script>
+        <title>Cake</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/jsonFetcher.js"></script>
+        <link rel="shortcut icon" href="./images/cake_with_biscuit.ico" type="image/x-icon">
+    </head>
+
+    <!-- TODO: use AOS library to load each section with animation -->
+    <body>
+        <!-- nav bar -->
+        <header>
+            <a href="#" class="logo">Cake<span>❤</span></a>
+            <div class="menuToggle"></div>
+            <ul class="navigation">
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#chefs">Chefs</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+
+        <!-- banner -->
+        <!-- TODO: change the banner with some animated pic rotate -->
+        <section id="banner" class="banner">
+            <div class="content">
+                <h2>Bake with Love<span>❤</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia, perferendis aspernatur autem maxime blanditiis vitae officiis harum ipsam fuga aperiam cumque, dolores earum, aliquid tempore eius accusamus nostrum. Dolores?</p>
+                <a href="#menu" class="button">Our Menu</a>
+            </div>
+        </section>
+
+        <!-- about me -->
+        <!-- TODO: servey more design to finalize the design -->
+        <section id="about" class="about">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titleText"><span>A</span>bout</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique error praesentium dignissimos impedit reiciendis deserunt minus amet consequuntur reprehenderit saepe, quas vel porro aut. Fugiat, aperiam? Qui, sequi quasi. Delectus. Modi mollitia, perferendis aspernatur autem maxime blanditiis vitae officiis harum ipsam fuga aperiam cumque, dolores earum, aliquid tempore eius accusamus nostrum.
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, earum labore, porro blanditiis excepturi iure repellendus id minima explicabo quidem sed corporis. Quis, itaque? Vero non aspernatur dicta minus excepturi.
+                    </p>
+                </div>
+
+                <div class="col50">
+                    <div class="imgBox">
+                        <img src="./images/insta-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- menu -->
+        <section id="menu" class="menu">
+            <div class="title">
+                <h2 class="titleText"><span>M</span>enu</h2>
+                <p>Porro atque aut praesentium sed harum deleniti similique necessitatibus!</p>
+            </div>
+
+            <!-- TODO: 
+                1. Change this section to disney style load section
+                // 2. This section will be populated by program
+             -->
+            <div class="menu-content"></div>
+
+            <div class="title">
+                <a href="#" class="button">View All</a>
+            </div>
+        </section>
+
+        <!-- Chefs -->
+        <!-- TODO: 
+            // 1. use Json file to populate 
+            // 2. change the look and design base on my wireframe
+            3. change design to fit with menu.
+        -->
+        <section id="chefs" class="chefs">
+            <div class="chefs-bg">                
+                <div class="border-top"></div>
+                <div class="border-bottom"></div>
+                <div class="chef-bg">
+                    <div class="title">
+                        <h2 class="titleText"><span>C</span>hiefs</h2>
+                        <p>Porro atque aut praesentium sed harum deleniti similique necessitatibus!</p>
+                    </div> 
+                    
+                    <div class="portfiles"></div>
+                </div>
+
+                <div class="red-border"></div>            
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <!-- TODO: 
+            // 1. need to use JSON file to populate this section
+            2. need to survey more designs to finalaize the looks
+        -->
+        <section id="reviews" class="reviews">
+            <div class="overlay"></div>
+            <div class="title white">
+                <h2 class="titleText"><span>R</span>eviews</h2>
+                <p>Porro atque aut praesentium sed harum deleniti similique necessitatibus!</p>
+            </div>
+
+            <div class="reviews-content"></div>
+        </section>
+
+        <!-- Contact -->
+        <!-- TODO: Change design if needed -->
+        <section id="contact" class="contact">
+            <div class="title">
+                <h2 class="titleText"><span>C</span>ontact</h2>
+                <p>Porro atque aut praesentium sed harum deleniti similique necessitatibus!</p>
+            </div>
+
+            <form action="" class="contact-form">
+                <div class="lines"></div>
+                <h3>Order Form</h3>
+                <div class="singleForm">
+                    <input type="text" name="name" required>
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="singleForm">
+                    <input type="text" name="phone" required>
+                    <label for="phone">Phone</label>
+                </div>
+
+                <div class="singleForm">
+                    <input type="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="singleForm">
+                    <textarea type="text" name="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <div class="submit-button">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+
+        <div class="copyrightText">
+            <p>Copyright &copy;2021 <a href="#">Cake❤</a> All Right Reserved</p>
+        </div>
+    </body>
+
+    <!-- template for menu/chef/review sections -->
+    <template>
+        <div class="box">
+            <div class="img-box"><img></div>
+            <div class="text"></div>
+        </div>
+    </template>
+
+    <!-- controls the toggle menu and nav bar -->
+    <script src="./js/main.js"></script>
+    <!-- menu lists -->
+    <script>
+        fetchJson("./json/menus.json", "menus", function(menuLists) {
+            if (menuLists.length > 0) {
+                let menuContent = document.querySelector(".menu-content");
+                let template = document.querySelector("template");
+
+                menuLists.forEach(menuItem => {
+                    // clone the structre from template
+                    let clone = template.content.cloneNode(true);
+                    let imageView = clone.querySelector("img");
+                    let textDiv = clone.querySelector(".text");
+                    let h3 = document.createElement("h3");
+                    // insert json data into elements
+                    h3.append(document.createTextNode(menuItem.menu_name));
+                    imageView.src = menuItem.img_url;
+
+                    textDiv.append(h3);
+
+                    menuContent.append(clone);
+                });
+            }
+        });
+    </script>
+    <!-- chef lists -->
+    <script>
+        fetchJson("./json/chefs.json", "chefs", function(chefList) {
+            if (chefList.length > 0) {
+                let portfiles = document.querySelector(".portfiles");
+                let template = document.querySelector("template");
+
+                chefList.forEach(chef => {
+                    let clone = template.content.cloneNode(true);
+                    let imageView = clone.querySelector("img");
+                    let textDiv = clone.querySelector(".text");
+                    let h3 = document.createElement("h3");
+
+                    h3.append(document.createTextNode(chef.name));
+                    imageView.src = chef.img_url;
+
+                    textDiv.append(h3);
+
+                    portfiles.append(clone);
+                });
+            }
+        });
+    </script>
+    <!-- review lists -->
+    <script>
+        fetchJson("./json/reviews.json", "reviews", function(reviewList) {
+            if (reviewList.length > 0) {
+                let reviewContent = document.querySelector(".reviews-content");
+                let template = document.querySelector("template");
+                
+                reviewList.forEach(review => {
+                    let clone = template.content.cloneNode(true);
+                    let imageView = clone.querySelector("img");
+                    let textDiv = clone.querySelector(".text");
+                    let quoteBlock = document.createElement("blockquote");
+                    let citation = document.createElement("cite");
+
+                    imageView.src = review.img_url;
+                    citation.append(document.createTextNode(review.user_name));
+                    quoteBlock.append(document.createTextNode(review.review_text), citation);
+
+                    textDiv.append(quoteBlock);
+
+                    reviewContent.append(clone)
+                });
+            }
+        });
+    </script>
+</html>

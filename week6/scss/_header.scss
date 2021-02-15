@@ -1,0 +1,114 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 500ms;
+
+    .logo {
+        @include textSytle(2em, getColor(primaryLightColor));
+        font-weight: 700;
+        text-decoration: none;
+
+        span {
+            color: getColor(accentRedColor);
+        }
+    }
+
+    .navigation {
+        position: relative;
+        display: flex;
+
+        li {
+            list-style: none;
+            margin-left: 30px;
+
+            a {
+                text-decoration: none;
+                font-weight: 300;
+                @include navigationEffect(getColor(primaryLightColor));
+            }
+        }
+    }
+
+    // when page is scrolled
+    &.sticky {
+        background: getColor(primaryLightColor);
+        padding: 10px 100px;
+        box-shadow: 0 5px 20px boxShadow(black, 0.05);
+
+        .logo {
+            color: getColor(defaultDarkColor);
+        }
+
+        .navigation li a {
+            @include navigationEffect(getColor(defaultDarkColor));
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 10px 20px;
+        
+        .menuToggle {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            color: getColor(primaryLightColor);
+            text-align: center;
+            cursor: pointer;
+
+            &::before {
+                font-family: $fontAwesome;
+                content: getIcon(bars);
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                font-size: 2em;
+            }
+
+            &.open {
+                &::before {
+                    content: getIcon(close);
+                }
+            }
+        }
+
+        .navigation {
+            display: none;
+
+            &.open {
+                width: 100%;
+                height: calc(100% - 68px);
+                position: fixed;
+                top: 68px;
+                left: 0;
+                background: getColor(primaryLightColor);
+                @include flex-center(column);
+            }
+
+            li {
+                margin-left: 0;
+
+                a {
+                    color: getColor(defaultDarkColor);
+                    font-size: 1.6em;
+                }
+            }
+        }
+
+        &.sticky {
+            padding: 10px 20px;
+
+            .menuToggle {
+                filter: invert(1);
+            }
+        }
+    }
+}

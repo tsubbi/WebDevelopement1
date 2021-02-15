@@ -1,0 +1,16 @@
+{
+    "chefs" : [
+        {
+            "name": "John Doe",
+            "img_url": "./images/chefs/expert1.jpg"
+        },
+        {
+            "name": "John Doe",
+            "img_url": "./images/chefs/expert2.jpg"
+        },
+        {
+            "name": "Jane Doe",
+            "img_url": "./images/chefs/expert3.jpg"
+        }
+    ]
+}

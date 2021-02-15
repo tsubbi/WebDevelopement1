@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+// TODO: reset all color pallets
+$colors: (
+    primaryLightColor: #ffffff,
+    accentRedColor: #ff0157,
+    defaultDarkColor: #111111,
+    defaultGrayColor: #777777,
+    accentLightColor: #fff5ee,
+);
+
+// fonts
+$ubuntu: 'Ubuntu', sans-serif;
+$noto_sans: 'Noto Sans TC', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$fontAwesome: 'FontAwesome';
+
+// Font Awesome icons
+$fontAwsomeIcons: (
+    bars: '\f0c9',
+    close: '\f00d'
+);
+
+// functions
+@function getColor($colorName) {
+    @return map-get($colors, $colorName);
+}
+
+@function boxShadow($color, $alpha) {
+    @return rgba($color, $alpha);
+}
+
+@function getIcon($iconName) {
+    @return map-get($fontAwsomeIcons, $iconName);
+}
+
+// mixins
+@mixin textSytle($fontSize, $textColor, $bgColor: transparent) {
+    font-size: $fontSize;
+    color: $textColor;
+    background: $bgColor;
+}
+
+@mixin navigationEffect($color) {
+    color: $color;
+
+    &:hover {
+        color: getColor(accentRedColor);
+    }
+}
+
+@mixin content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// predefined styles
+%buttonStyle {
+    @include textSytle(1em, getColor(primaryLightColor), getColor(accentRedColor));
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 500ms;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+%borderStyle {
+    grid-column: 2/4;
+    background: getColor(accentRedColor);
+}

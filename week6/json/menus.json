@@ -1,0 +1,40 @@
+{
+    "menus" : [
+        {
+            "menu_name": "Strawberry Cake",
+            "img_url": "./images/cakes/red_cake.png"
+        },
+        {
+            "menu_name": "Mirror Cake",
+            "img_url": "./images/cakes/blue_cake.png"
+        },
+        {
+            "menu_name": "Mango Cake",
+            "img_url": "./images/cakes/yellow_cake.png"
+        },
+        {
+            "menu_name": "Chocolate Cake",
+            "img_url": "./images/menu4.jpg"
+        },
+        {
+            "menu_name": "Tea Cake",
+            "img_url": "./images/menu5.jpg"
+        },
+        {
+            "menu_name": "Nut Cake",
+            "img_url": "./images/menu6.jpg"
+        },
+        {
+            "menu_name": "Jar Cake",
+            "img_url": "./images/cakes/glutenfree2_large.png"
+        },
+        {
+            "menu_name": "Cup Cake",
+            "img_url": "./images/cakes/cupcake.png"
+        },
+        {
+            "menu_name": "Macaron",
+            "img_url": "./images/cakes/macarons.png"
+        }
+    ]
+}
